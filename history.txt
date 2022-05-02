@@ -1,0 +1,6 @@
+Tarefa 1:
+docker build . -t custom-caddy:2.5.0-alpine
+docker container run -p 80:80 custom-caddy:2.5.0-alpine
+
+Tarefa 2:
+docker container run -p 80:80 -v ${PWD}/pages:/usr/src/pages custom-caddy:2.5.0-alpine
